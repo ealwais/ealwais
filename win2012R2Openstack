@@ -1,0 +1,1 @@
+gunzip -cd winndows_server_2012_r2_standard_eval_kvm_20131031.vhd.gz | glance image-create --property hypervisor_type=qemu --name "Windows Server 2012 R2 Std Eval" --container-format bare --disk-format qcow2.168.2.22    chef-12-2-0
