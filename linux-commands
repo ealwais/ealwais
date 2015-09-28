@@ -1,0 +1,8 @@
+Cntrl +U is delete all before Cursor, 
+Cntrl +K is delete all after Cursor, 
+Cntrl +A is to go to the beginning of the line. 
+Cntrl + C cancels
+Nmap finds open ports
+Netstat -p tcp finds tcp connections
+Lsof shows open files
+
