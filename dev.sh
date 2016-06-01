@@ -294,27 +294,27 @@ show_menus_chefserver() {
 # Exit when user the user select 3 form the menu option.
 read_options_chefserver(){
 	local choice
-	read -p "Enter choice [ 1 - 3] " choice
+	read -p "Enter choice [ 1 - 16 ]: " choice
 	case $choice in
 		1) one ;;
 		2) two ;;
 		3) three ;;
-        4) four ;;
-        5) five ;;
-        6) six ;;
-        7) seven ;;
-        8) eight ;;
-        9) nine ;;
+	        4) four ;;
+	        5) five ;;
+	        6) six ;;
+	        7) seven ;;
+	        8) eight ;;
+	        9) nine ;;
 		10) ten ;;
-        11) eleven ;;
-        12) twelve ;;
-        13) thirteen ;;
-        14) fourteen ;;
-        15) fifteen ;;
-        16) sixteen ;;
-        0) exit ;;
+	        11) eleven ;;
+	        12) twelve ;;
+	        13) thirteen ;;
+	        14) fourteen ;;
+	        15) fifteen ;;
+	        16) sixteen ;;
+	        0) exit ;;
 		*) echo -e "${RED}Error...${STD}" && sleep 2
-	esac
+		esac
 }
 
 show_menus_analytics() {
@@ -344,7 +344,7 @@ show_menus_analytics() {
 }
 read_options_analytics(){
         local choice
-        read -p "Enter choice [ 1 - 3] " choice
+        read -p "Enter choice [ 1 - 18 ]: " choice
         case $choice in
                 1) aone ;;
                 2) atwo ;;
@@ -399,7 +399,7 @@ show_menus_manage() {
 }
 read_options_manage(){
         local choice
-        read -p "Enter choice [ 1 - 3] " choice
+        read -p "Enter choice [ 1 - 21 ]: " choice
         case $choice in
                 1) mone ;;
                 2) mtwo ;;
@@ -446,7 +446,7 @@ show_menus_push() {
 }
 read_options_push(){
         local choice
-        read -p "Enter choice [ 1 - 3] " choice
+        read -p "Enter choice [ 1 - 9 ]: " choice
         case $choice in
                 1) pone ;;
                 2) ptwo ;;
@@ -490,7 +490,7 @@ show_menus_reporting() {
 }
 read_options_reporting(){
         local choice
-        read -p "Enter choice [ 1 - 3] " choice
+        read -p "Enter choice [ 1 - 18 ]: " choice
         case $choice in
                 1) rone ;;
                 2) rtwo ;;
@@ -522,10 +522,10 @@ trap '' SIGINT SIGQUIT SIGTSTP
 # -----------------------------------
 # Step #4: Main logic - infinite loop
 # ------------------------------------
-	show_menus_chefserver
-	read_options_chefserver
+    show_menus_chefserver
+    read_options_chefserver
 
-	show_menus_analytics
+    show_menus_analytics
     read_options_analytics
 
     show_menus_manage
